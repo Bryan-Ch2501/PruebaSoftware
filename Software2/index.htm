@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
+<head><meta name="author" content="Created with Masher by Half-Baked Software, registered to BryanCh."/><meta name="keywords" content="Masher, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<title>Unidad II - Ingeniería de Software</title>
+
+<!-- Made with executable version HotPotatoes: Masher Version 7.0 Release 3 Build 0 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+<style>
+:root {
+    --primary-blue: #1a73e8;
+    --text-main: #3c4043;
+    --white: #ffffff;
+    --bg-gray: #f1f3f4;
+}
+
+/* Reset básico */
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Evita scrolls dobles */
+}
+
+/* Encabezado Azul */
+header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    height: 80px;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+/* Contenedor y estilo de la imagen */
+.logo-container {
+    height: 70px; /* Define el alto de tu logo */
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: #ffffff;
+    justify-content: center; 
+}
+
+.logo-adaptable {
+    max-height: 90%;   
+    max-width: 90%;
+    height: auto;
+    width: auto;
+    object-fit: contain; /* Mantiene la proporción sin deformar */
+}
+
+.ExerciseTitle {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Layout principal */
+.wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Barra lateral */
+nav {
+    width: 300px;
+    background: var(--bg-gray);
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+.Index { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.Index li { margin-bottom: 12px; }
+
+.Index a {
+    display: block;
+    padding: 15px;
+    background: var(--white);
+    text-decoration: none;
+    color: var(--text-main);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.Index a:hover { 
+    background: var(--primary-blue); 
+    color: white; 
+    transform: translateX(5px);
+}
+
+/* Visor de contenido */
+#visor {
+    flex: 1;
+    border: none;
+    background: var(--white);
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .wrapper { flex-direction: column; }
+    nav { width: 100%; height: auto; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="./src/assets/LogoUni.webp" alt="Logotipo Institucional" class="logo-adaptable">
+    </div>
+    <div class="header-titles">
+        <h1 class="ExerciseTitle">Unidad II - Ingeniería de Software</h1>
+    </div>
+</header>
+
+<div class="wrapper">
+    <nav>
+        <h3 style="margin: 5px;">Actividades</h3>
+        <ul class="Index">
+            <li><a href="./src/Page/Crucigrama.htm" target="visor">Estrategias y Pruebas</a></li>
+            <li><a href="./src/Page/Quiz.htm" target="visor">Quiz Unidad II</a></li>
+            <li><a href="./src/Page/Oraciones.htm" target="visor">Procesos de Pruebas</a></li>
+            <li><a href="./src/Page/OracionesDes1.htm" target="visor">Ordenamiento Lógico 1</a></li>
+            <li><a href="./src/Page/OracionesDes2.htm" target="visor">Ordenamiento Lógico 2</a></li>
+            <li><a href="./src/Page/OracionesDes3.htm" target="visor">Ordenamiento Lógico 3</a></li>
+            <li><a href="./src/Page/OracionesDes4.htm" target="visor">Ordenamiento Lógico 4</a></li>
+            <li><a href="./src/Page/OracionesDes5.htm" target="visor">Ordenamiento Lógico 5</a></li>
+            <li><a href="./src/Page/Emparejar.htm" target="visor">Emparejamiento: Conceptos</a></li>  
+        </ul>
+    </nav>
+
+    <iframe name="visor" id="visor" src="about:blank" title="Contenido de evaluación"></iframe>
+</div>
+
+</body>
+</html>
